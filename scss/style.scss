@@ -1,0 +1,88 @@
+@import "var";
+
+/*Body*/ 
+body {
+    font-family: $font-generaltext;
+}
+/*Navegador*/
+.navegador {
+    /* fonts and text*/
+    font-weight: 400;
+    text-align: right;
+    list-style-type: none;
+    /* margins and co */
+    border: 0;
+    margin: 20px;
+    padding-right: 20px;
+    height: 70px;
+    /* display */
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .links-nav {
+        font-family: $font-generaltext;
+        text-decoration: none;
+        text-align: end;
+        color: black;
+        font-size: 18px;
+        font-weight: 400;
+        margin: 0 10px 0 10px;
+    }
+    li {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-end;
+    } 
+    a {
+        padding: 10px;
+        /* Animations y Hover */
+        transition: background-color 1s;
+        transition: border-radius;
+        transition-timing-function:ease;
+    }
+    a:hover {
+        background-color: black;
+        border-radius: 5px;
+        color: white;
+    }
+    }  
+nav {
+    a {
+        /* Animations y Hover */
+        transition: background-color 1s;
+        transition: border-radius;
+        transition-timing-function:ease;
+    }
+    a:hover {
+        background-color: white;
+        border-radius: 5px;
+        color: black;
+    }
+    }
+/*Main*/
+h1 {
+    font-family: $font-lila;
+    padding: 0;
+    margin: 0;
+}
+#lila-gemini {
+    font-size: 20px;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-content: flex-end;
+}
+#img-portada {
+    width: 100%;
+}
+.intro {
+    h2 {
+        font-weight: 900;
+        text-align: center;
+    }
+}
+.fotos-home {
+    width: 450px;
+}
