@@ -1,0 +1,79 @@
+/*fonts*/
+/*colors*/
+/*Body*/
+body {
+  font-family: "Nunito", sans-serif; }
+
+/*Navegador*/
+.navegador {
+  /* fonts and text*/
+  font-weight: 400;
+  text-align: right;
+  list-style-type: none;
+  /* margins and co */
+  border: 0;
+  margin: 20px;
+  padding-right: 20px;
+  height: 70px;
+  /* display */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .navegador .links-nav {
+    font-family: "Nunito", sans-serif;
+    text-decoration: none;
+    text-align: end;
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0 10px 0 10px; }
+  .navegador li {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end; }
+  .navegador a {
+    padding: 10px;
+    /* Animations y Hover */
+    transition: background-color 1s;
+    transition: border-radius;
+    transition-timing-function: ease; }
+  .navegador a:hover {
+    background-color: black;
+    border-radius: 5px;
+    color: white; }
+
+nav a {
+  /* Animations y Hover */
+  transition: background-color 1s;
+  transition: border-radius;
+  transition-timing-function: ease; }
+
+nav a:hover {
+  background-color: white;
+  border-radius: 5px;
+  color: black; }
+
+/*Main*/
+h1 {
+  font-family: "DM Serif Display", serif;
+  padding: 0;
+  margin: 0; }
+
+#lila-gemini {
+  font-size: 20px;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-content: flex-end; }
+
+#img-portada {
+  width: 100%; }
+
+.intro h2 {
+  font-weight: 900;
+  text-align: center; }
+
+.fotos-home {
+  width: 450px; }
