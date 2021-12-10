@@ -86,3 +86,20 @@ h1 {
 .fotos-home {
     width: 450px;
 }
+@mixin divs {
+    height: 300px;
+    padding: 100px;
+    margin: 20px;
+}
+@mixin flex {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.nletter {
+    @include divs;
+    @include flex;
+}
