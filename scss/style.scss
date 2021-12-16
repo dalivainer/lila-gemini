@@ -81,6 +81,11 @@ h1 {
     h2 {
         font-weight: 900;
         text-align: center;
+        margin: 10px;
+    }
+    p {
+        margin: 10px;
+        padding-top: 10px;
     }
 }
 .fotos-home {
@@ -88,18 +93,53 @@ h1 {
 }
 @mixin divs {
     height: 300px;
-    padding: 100px;
-    margin: 20px;
+    padding: 20px;
+    margin: 20px 500px;
 }
-@mixin flex {
+@mixin flex-column {
     display: flex;
-    text-align: center;
-    flex-direction: column;
-    align-content: space-around;
-    justify-content: space-evenly;
+    flex-flow: column wrap;
+    justify-content: center;
     align-items: center;
+    text-align: center;
+}
+@mixin flex-row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.intro {
+    @include divs;
+    @include flex-column;
+}
+.py-5 {
+    padding-top: 0!important;
 }
 .nletter {
     @include divs;
-    @include flex;
+    @include flex-column;
+    background-color: #E4FCF9;
+}
+.rrss {
+    padding: 20px;
+    margin: 20px;
+    ul {
+        @include flex-row;
+        list-style-type: none;
+        margin: 0;
+    }
+    img {
+        width: 30px;
+        height: 30px;
+    }
+    li {
+        margin: 20px;
+    }
+}
+/*Footer*/
+.nav-footer {
+    background-color: black;
+
 }
