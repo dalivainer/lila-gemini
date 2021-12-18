@@ -5,8 +5,8 @@ body {
   font-family: "Nunito", sans-serif; }
 
 /*Navegador*/
-.navegador {
-  /* fonts and text*/
+.nav-sup {
+  /* fonts and back*/
   font-weight: 400;
   text-align: right;
   list-style-type: none;
@@ -20,7 +20,7 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between; }
-  .navegador .links-nav {
+  .nav-sup .links-nav {
     font-family: "Nunito", sans-serif;
     text-decoration: none;
     text-align: end;
@@ -28,17 +28,17 @@ body {
     font-size: 18px;
     font-weight: 400;
     margin: 0 10px 0 10px; }
-  .navegador li {
+  .nav-sup li {
     display: flex;
     flex-wrap: wrap;
     align-content: flex-end; }
-  .navegador a {
+  .nav-sup a {
     padding: 10px;
     /* Animations y Hover */
     transition: background-color 1s;
     transition: border-radius;
     transition-timing-function: ease; }
-  .navegador a:hover {
+  .nav-sup a:hover {
     background-color: black;
     border-radius: 5px;
     color: white; }
@@ -126,4 +126,18 @@ h1 {
 
 /*Footer*/
 .nav-footer {
-  background-color: black; }
+  /* fonts and back*/
+  font-weight: 400;
+  text-align: right;
+  list-style-type: none;
+  background-color: black;
+  /* display */
+  display: flex;
+  flex-flow: column wrap;
+  /*sections*/ }
+  .nav-footer #lila-footer {
+    font-size: 20px;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    display: flex; }
