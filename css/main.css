@@ -27,32 +27,21 @@ body {
     color: black;
     font-size: 18px;
     font-weight: 400;
-    margin: 0 10px 0 10px; }
+    margin: 0 10px 0 10px;
+    /* Animations y Hover */
+    transition: background-color 1s;
+    transition: border-radius;
+    transition-timing-function: ease; }
   .nav-sup li {
     display: flex;
     flex-wrap: wrap;
     align-content: flex-end; }
   .nav-sup a {
-    padding: 10px;
-    /* Animations y Hover */
-    transition: background-color 1s;
-    transition: border-radius;
-    transition-timing-function: ease; }
+    padding: 10px; }
   .nav-sup a:hover {
     background-color: black;
     border-radius: 5px;
     color: white; }
-
-nav a {
-  /* Animations y Hover */
-  transition: background-color 1s;
-  transition: border-radius;
-  transition-timing-function: ease; }
-
-nav a:hover {
-  background-color: white;
-  border-radius: 5px;
-  color: black; }
 
 /*Main*/
 h1 {
@@ -132,12 +121,51 @@ h1 {
   list-style-type: none;
   background-color: black;
   /* display */
-  display: flex;
-  flex-flow: column wrap;
-  /*sections*/ }
+  /*display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;*/
+  display: grid;
+  grid-template-areas: "title menu" "title text"; }
+  .nav-footer .links-nav {
+    font-family: "Nunito", sans-serif;
+    text-decoration: none;
+    text-align: end;
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+    margin: 0 10px 0 10px; }
+  .nav-footer li {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end; }
+  .nav-footer a {
+    padding: 10px; }
+  .nav-footer #div-lila {
+    margin: 20px; }
   .nav-footer #lila-footer {
-    font-size: 20px;
+    font-size: 30px;
+    font-family: "DM Serif Display", serif;
+    color: white;
     text-align: left;
-    padding: 0;
-    margin: 0;
-    display: flex; }
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 0;
+    grid-area: title; }
+  .nav-footer .menu-foot {
+    grid-area: menu;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin: 0px; }
+  .nav-footer #div-menu {
+    margin: 20px; }
+  .nav-footer #end-text {
+    color: #A9A9A9;
+    grid-area: text;
+    padding-right: 20px;
+    font-size: 15px;
+    font-style: italic; }

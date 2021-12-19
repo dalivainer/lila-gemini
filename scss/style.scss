@@ -28,6 +28,10 @@ body {
         font-size: 18px;
         font-weight: 400;
         margin: 0 10px 0 10px;
+        /* Animations y Hover */
+        transition: background-color 1s;
+        transition: border-radius;
+        transition-timing-function:ease;
     }
     li {
         display: flex;
@@ -36,10 +40,6 @@ body {
     } 
     a {
         padding: 10px;
-        /* Animations y Hover */
-        transition: background-color 1s;
-        transition: border-radius;
-        transition-timing-function:ease;
     }
     a:hover {
         background-color: black;
@@ -47,19 +47,6 @@ body {
         color: white;
     }
     }  
-nav {
-    a {
-        /* Animations y Hover */
-        transition: background-color 1s;
-        transition: border-radius;
-        transition-timing-function:ease;
-    }
-    a:hover {
-        background-color: white;
-        border-radius: 5px;
-        color: black;
-    }
-    }
 /*Main*/
 h1 {
     font-family: $font-lila;
@@ -110,6 +97,10 @@ h1 {
     align-items: center;
     text-align: center;
 }
+@mixin flex {
+    display: flex;
+    flex-wrap: wrap;
+}
 .intro {
     @include divs;
     @include flex-column;
@@ -140,20 +131,65 @@ h1 {
 }
 /*Footer*/
 .nav-footer {
-    /* fonts and back*/
-    font-weight: 400;
-    text-align: right;
-    list-style-type: none;
-    background-color: black;
-    /* display */
-    display:flex;
-    flex-flow: column wrap;
-    /*sections*/
-    #lila-footer {
-        font-size: 20px;
-        text-align: left;
-        padding: 0;
-        margin: 0;
-        display: flex;
-    }
-}
+        /* fonts and back*/
+        font-weight: 400;
+        text-align: right;
+        list-style-type: none;
+        background-color: black;
+        /* display */
+        /*display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;*/
+        display: grid;
+        grid-template-areas: "title menu" "title text";
+        .links-nav {
+            font-family: $font-generaltext;
+            text-decoration: none;
+            text-align: end;
+            color: white;
+            font-size: 15px;
+            font-weight: 400;
+            margin: 0 10px 0 10px;
+        }
+        li {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+        } 
+        a {
+            padding: 10px;
+        } 
+        #div-lila {
+            margin: 20px;
+        }
+        #lila-footer {
+            font-size: 30px;
+            font-family: $font-lila;
+            color: white;
+            text-align: left;
+            @include flex;
+            align-items: center;
+            padding: 10px;
+            margin-bottom: 0;
+            grid-area: title;
+        }
+        .menu-foot {
+            grid-area: menu;
+            display:flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            margin: 0px;
+        }
+        #div-menu {
+            margin: 20px;
+        }
+        #end-text {
+            color: #A9A9A9;
+            grid-area: text;
+            padding-right: 20px;
+            font-size: 15px;
+            font-style: italic;
+        }
+        }
