@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Media Queries -->
+    <meta name="viewport" content="initial-scale=1, width=device-width">
     <!-- SEO -->
     <meta name="description" content="Blog de escritura y arte">
     <meta name="keywords" content="blog, escritura, cretividad, arte, analisis, lectura, reflexion">
@@ -26,7 +28,7 @@
 <body>
     <header>
         <!-- MENÚ DE NAVEGACIÓN SUPERIOR -->
-        <nav>
+        <nav class="nav-header">
             <ul class="nav-sup">
                 <li id="lila-gemini"><h1>LILA GEMINI</h1></li>
                 <li> 
@@ -42,7 +44,10 @@
     </header>
     <main>
             <!-- Portada -->
-            <img id="img-portada" src="media/mar-portada-stickynote.jpg" alt="portada">
+            <div class="portada">
+                <img id="img-portada" src="media/mar-portada-stickynote.jpg" alt="portada">
+                <img id="img-responsive" src="media/mar-cuadrado.png" alt="portada">
+            </div>
             <!-- Texto -->
             <section class="intro">
                 <div>
@@ -60,8 +65,6 @@
                     <p>
                         Quod similique minus, eaque vel consectetur eum quis, culpa necessitatibus accusantium architecto quo unde accusamus dignissimos.
                     </p>
-                    <a class="link-cta" href="docs/accessibility.html">Ver más</a>
-                      <span class="visually-hidden">about accessibility</span></a>
                   </div>
                   <div class="col-md-6">
                     <img class="fotos-home" src="media/mountain-home.jpg" alt="montaña">
@@ -74,8 +77,6 @@
                   <div class="col-md-5 order-md-2">
                     <h3>TÍTULO DOS</h3>
                     <p>Quod similique minus, eaque vel consectetur eum quis, culpa necessitatibus accusantium architecto quo unde accusamus dignissimos..</p>
-                    <a class="link-cta" href="docs/intro.html">Ver más
-                      <span class="visually-hidden">about theme customization</span></a>
                   </div>
                   <div class="col-md-6 order-md-1">
                     <img class="fotos-home" src="media/waterfall-home.jpg" alt="waterfall">
@@ -88,8 +89,6 @@
                     <div class="col-md-5">
                       <h3>TÍTULO TRES</h3>
                       <p>Eaque vel consectetur eum quis, culpa necessitatibus accusantium architecto quo unde accusamus dignissimos..</p>
-                      <a class="link-cta" href="docs/intro.html">Ver más
-                        <span class="visually-hidden">about theme customization</span></a>
                     </div>
                     <div class="col-md-6">
                         <img class="fotos-home" src="media/nasa-home.jpg" alt="nasa">
