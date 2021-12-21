@@ -90,6 +90,7 @@ h1 {
 .py-5 {
   padding-top: 0 !important; }
 
+/* Newsletter */
 .nletter {
   height: 300px;
   padding: 20px;
@@ -117,6 +118,33 @@ h1 {
     height: 30px; }
   .rrss li {
     margin: 20px; }
+
+/* Form */
+form {
+  margin: 0px !important; }
+
+.form-floating {
+  width: auto !important; }
+
+.form-control {
+  display: flex !important;
+  justify-content: center;
+  align-content: center;
+  margin: 0; }
+
+/* Button */
+.btn-primary {
+  color: #fff;
+  background-color: #03b4b4;
+  border-color: #03b4b4; }
+
+.form-floating {
+  width: 300px; }
+
+button:hover {
+  background-color: black !important;
+  border-color: black !important;
+  color: white; }
 
 /*Footer*/
 .nav-footer {
