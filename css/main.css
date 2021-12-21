@@ -194,9 +194,6 @@ h1 {
   #img-responsive {
     display: block;
     width: 60%; }
-  .intro {
-    padding: 0px;
-    margin: 0px; }
   .nletter {
     padding: 0px;
     margin: 0px; }
@@ -204,6 +201,8 @@ h1 {
     padding: 0px; }
   .fotos-home {
     width: 60%; }
+  .intro {
+    margin: 0px; }
   .intro div h2 {
     display: flex;
     justify-content: flex-start;
