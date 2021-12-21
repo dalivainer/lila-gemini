@@ -50,7 +50,7 @@ body {
         font-size: 18px;
         font-weight: 400;
         margin: 0 10px 0 10px;
-        /* Animations y Hover */
+    /* Animations y Hover */
         transition: background-color 1s;
         transition: border-radius;
         transition-timing-function:ease;
@@ -112,6 +112,7 @@ h1 {
 .py-5 {
     padding-top: 0!important;
 }
+/* Newsletter */
 .nletter {
     @include divs;
     @include flex-column;
@@ -133,6 +134,33 @@ h1 {
         margin: 20px;
     }
 }
+        /* Form */
+        form {
+            margin: 0px!important;
+        }
+        .form-floating {
+            width: auto!important;
+        }
+        .form-control {
+            display: flex!important;
+            justify-content: center;
+            align-content: center;
+            margin: 0;
+        }
+            /* Button */
+            .btn-primary {
+                color: #fff;
+                background-color: rgb(3, 180, 180);
+                border-color:rgb(3, 180, 180);
+            }
+            .form-floating {
+                width: 300px;
+            }
+            button:hover {
+                background-color: black!important;
+                border-color: black!important;
+                color: white;
+            }
 /*Footer*/
 .nav-footer {
         /* fonts and back*/
